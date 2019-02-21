@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_example_rtmp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surfaceView"
+        />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_below="@+id/surfaceView"-->
+    <!--android:background="@drawable/profile"/>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="300dp"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/liveStartBtn"
+        android:text="방송시작"
+        android:textSize="12sp"
+        android:textColor="#f0ffffff"
+        android:background="@drawable/sp_white_rounded_box"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+
+        />
+    <Button
+        android:id="@+id/liveStopBtn"
+        android:text="방송종료"
+        android:textSize="12sp"
+        android:textColor="#f0ffffff"
+        android:background="@drawable/sp_white_rounded_box"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+
+        />
+
+   <ImageButton
+    android:id="@+id/switch_camera"
+    android:src="@drawable/ic_switch_camera_white_24dp"
+    android:background="@null"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_alignParentEnd="true"
+    />
+
+
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/live_label"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:background="@drawable/round_corner_red"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone"-->
+    <!--tools:text="LIVE"-->
+    <!--tools:visibility="visible" />-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+
+
+
+        <!--<Button-->
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/WalletBackIv"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:layout_marginStart="4dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/genWalletTitleTv"
+        android:text="지갑 생성하기"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/genWalletPwLo"
+        android:layout_below="@id/genWalletTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="60dp"
+        app:errorEnabled="true"
+        android:textColorHint="#b2ffffff">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/Wallet_Psd_ed"
+            android:hint="지갑 비밀번호"
+            android:paddingStart="8dp"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#64ffffff"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_below="@id/genWalletPwLo"
+        android:layout_marginTop="12dp"
+        android:text="비밀번호를 잃어버리지 않도록 주의해주세요."
+        android:textColor="#b8ffffff"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Wallet_create_btn"
+        android:layout_below="@id/genWalletPwLo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sp_white_round_box"
+        android:text="지갑 생성"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="Wallet_create_btn"/>
+
+</RelativeLayout>

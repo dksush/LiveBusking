@@ -114,7 +114,7 @@ public class main_wallet extends AppCompatActivity implements SwipeRefreshLayout
         try{
             // Observable : 데이터 스트리. 특정 신호가 들어올때 데이터를 처리하고 다른 구성요소에 전달한다.
             // Observers : Observable 에서 나온 데이터를 소비.
-            // -> subscribeOn() 메소드를 통 subscribeOn() 를 구독해, 방출된 데이터 수신.
+            // -> subscribeOn() 메소드를 통해 subscribeOn() 를 구독, 방출된 데이터 수신.
             // -> 등록된 모든 observer는 onNext() 콜백으로 데이터를 수신한다.
             // -> 여기에서 JSON 응답 파싱이나 UI 업데이트와 같은 다양한 작업을 수행. observable에서 에러가 발생하면, observer는 onError()에서 에러를 수신.
             io.reactivex.Observable.create((ObservableOnSubscribe<TokenContract>) emitter -> {

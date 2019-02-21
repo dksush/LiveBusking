@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="지갑 생성 결과"
+        android:gravity="center"
+        />
+
+    <View
+        android:background="#8f818181"
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"/>
+
+
+    <TextView
+        android:id="@+id/wallet_name"
+        android:text="wallet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/wallet_qr_cord"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/wallet_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wallet_address-a"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/genWallet_btn"
+        android:text="확인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="genWallet_btn"
+
+        />
+
+
+
+</LinearLayout>

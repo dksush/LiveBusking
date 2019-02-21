@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+
 import com.example.dksush0828.livebusking.R;
 import com.example.dksush0828.livebusking.live.netty_chat.viewer_chat_adapter;
 import com.example.dksush0828.livebusking.rtc_peer.kurento.KurentoPresenterRTCClient;
@@ -56,6 +57,7 @@ import org.webrtc.StatsReport;
 import org.webrtc.SurfaceViewRenderer;
 import org.webrtc.VideoCapturer;
 import org.webrtc.VideoRenderer;
+
 
 
 import java.util.ArrayList;

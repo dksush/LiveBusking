@@ -95,8 +95,6 @@ public class Generate_Wallet extends AppCompatActivity  {
 
 
 
-
-
         //SQLite
         keyDBHelper = new KeyDBHelper(getApplicationContext(),"key_list",null,1);
         keyDBHelper.keyDB();

@@ -13,6 +13,9 @@ import org.webrtc.SessionDescription;
 
 import timber.log.Timber;
 
+
+
+
 /**
  * /**
  * Kurento-Media-Server 에 방송 송출자 (BJ) 로 연결할 때 사용하는 Presenter Client 객체
@@ -21,7 +24,6 @@ import timber.log.Timber;
  * RTCClient 에서 sendOfferSdp 나 sendAnswerSdp 등을 오버라이딩하여 Presenter 가 방송을 시작할 때 필요한 정보를 넘기도록 한다.
  * 서버와 연결하고자할 때 sendOfferSdp 메소드를 오버라이딩하여 presenter 로 연결한다.
  *
- * Created by charlie on 2018. 5. 28
  */
 
 

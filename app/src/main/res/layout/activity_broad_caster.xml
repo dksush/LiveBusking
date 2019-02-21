@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/liveBroadWebRtcSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/liveBroadCloseIb"
+        android:src="@drawable/ic_close_white_24dp"
+        android:background="@null"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <Button
+        android:id="@+id/liveBroadStopBtn"
+        android:text="방송종료"
+        android:textSize="12sp"
+        android:textColor="#f0ffffff"
+        android:background="@drawable/sp_white_rounded_box"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/liveBroadSetTv"
+        android:text="@string/set_broadcast_ko"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/liveBroadSwitchIb"
+        android:src="@drawable/ic_switch_camera_white_24dp"
+        android:background="@null"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        />
+    <RelativeLayout
+        android:id="@+id/liveBroadInfoLo"
+        android:layout_above="@id/liveBroadStartBtn"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sp_white_rounded_filled_box"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:id="@+id/liveBroadProfileIv"
+            android:src="@drawable/ic_profile_ex1"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+        <TextView
+            android:id="@+id/liveBroadHostNameTv"
+            android:text="박천명"
+            android:textSize="18sp"
+            android:textColor="@color/colorGray"
+            android:layout_toEndOf="@id/liveBroadProfileIv"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/liveBroadRoomNameEt"
+            android:layout_below="@id/liveBroadProfileIv"
+            android:hint="방송 제목 지정"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:drawableEnd="@drawable/ic_edit_gray_24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/liveBroadRoomNameEt"
+            android:layout_marginTop="8dp"
+            >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/liveBroadCountLo"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#5c000000"
+        android:visibility="gone"
+        >
+        <View
+            android:background="@drawable/sp_red_circle"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            />
+        <TextView
+            android:id="@+id/liveBroadCountTv"
+            android:text="시청자 0명"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="6dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/liveBroadStartBtn"
+        android:text="@string/start_live_ko"
+        android:textColor="@color/colorTextWhite"
+        android:background="@drawable/sp_orange_filled_rounded_box"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/liveBroadChatRv"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:paddingStart="16dp"
+        android:background="@drawable/sp_broadchat_rv_gradient"
+        android:layout_height="160dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

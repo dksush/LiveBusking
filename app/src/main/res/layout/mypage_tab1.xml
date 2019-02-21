@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<Button-->
+            <!--android:id="@+id/live_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="live"-->
+            <!--android:onClick="live_btn"-->
+            <!--tools:ignore="OnClick" />-->
+        <!--<Button-->
+        <!--android:id="@+id/wallet"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="wallet"-->
+        <!--tools:layout_editor_absoluteX="107dp"-->
+        <!--tools:layout_editor_absoluteY="51dp"-->
+        <!--tools:ignore="MissingConstraints"-->
+        <!--android:onClick="wallet"-->
+            <!--android:layout_below="@+id/live_btn"/>-->
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

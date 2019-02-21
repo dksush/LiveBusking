@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet.main_wallet">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/walletAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/WalletBackIv"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:background="@null"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="6dp"
+            android:layout_marginStart="4dp"
+            />
+
+        <TextView
+            android:id="@+id/charge"
+            android:text="충전하기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:padding="11sp"
+            android:textColor="#fff"
+            android:layout_marginTop="8sp"/>
+        <TextView
+            android:id="@+id/wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지갑이름"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:id="@+id/wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0xc1BaF6E2B0faea27B148f2a15c57792AAd610151"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/wallet_name"
+            android:layout_marginTop="10sp"/>
+
+
+        <ImageView
+            android:id="@+id/walletRefresh"
+            android:src="@drawable/ic_autorenew_white_24dp"
+            android:padding="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="refresh" />
+
+        <TextView
+            android:id="@+id/token_num"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/money"
+
+            />
+
+        <TextView
+            android:id="@+id/money"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOKEN"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/walletAccount">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/walletSwipe"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wallet_Recycle"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/walletActionLo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+    <Button
+        android:id="@+id/walletSendBtn"
+        android:text="보내기"
+        android:textSize="14sp"
+        android:background="@drawable/sp_alpa_white_round_box"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/walletReceiveBtn"
+            android:text="받기"
+            android:textSize="14sp"
+            android:background="@drawable/sp_alpa_white_round_box"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="8dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

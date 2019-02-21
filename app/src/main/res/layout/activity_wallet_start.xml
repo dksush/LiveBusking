@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".wallet.wallet_start">
+    <TextView
+        android:text="나만의 토큰 지갑"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Create_wallet_btn"
+        android:text="지갑 생성하기"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/sp_white_round_box_line"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="48dp" />
+    <Button
+        android:id="@+id/Get_wallet_btn"
+        android:text="지갑 불러오기"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Create_wallet_btn"
+        android:background="@drawable/sp_white_round_box_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="48dp" />
+
+</RelativeLayout>
